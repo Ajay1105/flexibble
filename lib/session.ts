@@ -50,9 +50,7 @@ export const authOptions: NextAuthOptions = {
             } catch (error) {
                 console.log("Error retrieving user data",error);
                 return session;
-            }
-
-            
+            }  
         },
 
         async signIn({ user }: { user: AdapterUser | User }) {
