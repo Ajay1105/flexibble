@@ -6,7 +6,7 @@ const User = g.model('User',{
   email: g.string().unique(),
   avatarUrl: g.url(),
   description: g.string().optional(),
-  githubUrl: g.url().optional(),
+  githuburl: g.url().optional(),
   linkedinUrl: g.url().optional(),
   projects: g.relation(()=>Project).list().optional(),
 }).auth((rules)=>{
@@ -19,7 +19,7 @@ const Project = g.model('Project',{
   description: g.string(),
   image: g.url(),
   liveSiteUrl: g.url(),
-  githubUrl: g.url(),
+  githuburl: g.url(),
   category:g.string().search(),
   createdBy: g.relation(()=>User),
 }).auth((rules)=>{
