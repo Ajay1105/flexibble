@@ -23,11 +23,10 @@ const Categories = () => {
             key={filter}
             type="button"
             onClick={() => handleTags(filter)}
-            className={`${
-              category === filter
+            className={`${category === filter
                 ? "bg-light-white-300 font-medium"
                 : "font-normal"
-            } px-4 py-3 rounded-lg capitalize whitespace-nowrap`}
+              } px-4 py-3 rounded-lg capitalize whitespace-nowrap`}
           >
             {filter}
           </button>
